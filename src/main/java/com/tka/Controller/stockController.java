@@ -24,6 +24,12 @@ public class stockController {
         return "viewStock";
     }
 
+    @GetMapping("/stocks")
+    public String getStocks(Model model) {
+        model.addAttribute("stockList", stockService.getAllStocks());
+        return "stock"; // stock.jsp
+    }
+    
     @GetMapping("/add")
     public String showForm(Model model) {
         model.addAttribute("stock", new stock());

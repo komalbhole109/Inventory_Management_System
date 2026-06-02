@@ -11,24 +11,19 @@
     <th>Product</th>
     <th>Supplier</th>
     <th>Quantity</th>
-    <th>Action</th>
 </tr>
 
-    <tr>
-        <th>ID</th>
-        <th>Product Name</th>
-        <th>Quantity</th>
-    </tr>
+    
 
     <!-- ✅ ADD HERE -->
-    <c:forEach var="stock" items="${stockList}">
-        <tr>
-            <td>${stock.id}</td>
-            <td>${stock.product.name}</td>
-            <td>${stock.quantity}</td>
-        </tr>
-    </c:forEach>
-
+	<c:forEach var="stock" items="${stockList}">
+	    <tr>
+	        <td>${stock.id}</td>
+	        <td>${stock.product.name}</td>
+	        <td>${stock.supplier.name}</td>   <!-- ✅ ADD THIS -->
+	        <td>${stock.quantity}</td>
+	    </tr>
+	</c:forEach>
 
 </table>
 <%@ include file="footer.jsp" %> 

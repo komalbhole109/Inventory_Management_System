@@ -5,9 +5,9 @@
 
 <div style="text-align:center; margin-top:30px;">
 
-    <a href="/products">View Products</a><br><br>
-    <a href="/stocks">View Stock</a><br><br>
-    <a href="/suppliers">View Suppliers</a>
+    <a href="/products"><button> viewProducts</button></a></><br><br>
+    <a href="/stocks"><button>View Stock</button></a><br><br>
+    <a href="/suppliers"><button>View Suppliers</button></a>
 
 </div>
 

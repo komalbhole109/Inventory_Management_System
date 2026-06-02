@@ -5,9 +5,9 @@ import java.util.List;
 
 public interface stockService {
 
-    List<stock> getAllStocks();
-
     void saveStock(stock stock);
 
     void deleteStock(int id);
+
+    List<stock> getAllStocks(); // ✅ only declaration
 }
